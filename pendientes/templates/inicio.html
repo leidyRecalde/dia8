@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-color:aqua;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bienvenidos a sitio viajero al interior del pais </h1>
+        <h2>Te damos la bienvenida a nuestro lugar favorito, aqui nos encontraremos y tendremos
+            la oportunidad de viajar por todos los rincones del pais desde antes de moverte de 
+            comodidad, EJUPUES!!! 
+        </h2>
+        hola me llamo {{ nombre }} y tengo {{ edad }} mis hobbies son
+    {{hobbies.0}}, {{hobbies.1}}, {{hobiies.2}}, {{hobbies.3}}
+    {% for x in hobbies %}
+      <li> {{ x }}</li>
+        {% endfor %}  
+    <p> y bue, mis tareas son: </p> 
+
+    {% for tarea in lista_tarea %}
+        <li>{{tarea.titulo}}: {{tarea.descripcion}} </li>
+        {% endfor %}
+    </body>
+
+
+
+</html>
